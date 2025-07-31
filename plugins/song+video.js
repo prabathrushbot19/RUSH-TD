@@ -45,9 +45,65 @@ let downloadUrl = down.dl_url
 
 //send audio message
 await conn.sendMessage(from, {audio: {url: downloadUrl}, mimetype: "audio/mpeg"}, {quoted: mek})
+await conn.sendMessage(from, {document: {url: downloadUrl}, mimetype: "audio/mp3",fileName:data.title + ".mp3",caption:"MADE BY RUSH_TD"}, {quoted: mek})
+    
+} catch(e) {
+console.log(e)
+reply("An error occurred: " + e.message)
+    }
+})
+
+
+    //=========video-dl==============
+cmd({
+    pattern: "video",
+    react: "📹",
+    desc: "download video",
+    category: "download",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+if(!q) return reply("please give me url or title")
+const search = await yts(q)
+const data = search.videos[0]
+if (!data) return reply("Song not found!")
+
+const url = data.url
+
+let desc = `
+🌟 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 🌟    
+════════════════════════     
+🔮  R U S H - T D  🔮  
+      📹 VIDEO DOWNLOADER 📹  
+════════════════════════   
+
+🚀 Pow. By RAMESH DISSANAYAKA 🔥
+─────────────────────────
+🎬 *title:* ${data.title}
+⏱️ *description:* ${data.description}
+📅 *time:* ${data.timestamp}
+👀 *Views:* ${data.views}
+─────────────────────────
+📹 Made with ❤️ by RAMESH DISSANAYAKA💫
+        `
+await conn.sendMessage(from, {image: {url: data.thumbnail}, caption: desc}, {quoted: mek})
+
+// download video
+let down = await fg.ytv(url)
+if (!down || !down.dl_url) return reply("Failed to download video. Try another video/link.")
+
+let downloadUrl = down.dl_url
+
+//send video message
+await conn.sendMessage(from, {video: {url: downloadUrl}, mimetype: "video/mp4"}, {quoted: mek})
+await conn.sendMessage(from, {document: {url: downloadUrl}, mimetype: "video/mp4",fileName:data.title + ".mp4"}, {quoted: mek})
 
 } catch(e) {
 console.log(e)
 reply("An error occurred: " + e.message)
     }
 })
+
+
+
