@@ -14,7 +14,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 if(!q) return reply("please give me url or title")
 const search = await yts(q)
-const data = search.video[0];
+const data = search.videos[0];
 const url = data.url
 
 let desc = `
@@ -36,13 +36,14 @@ let desc = `
 🎼 Made with ❤️ by RAMESH DISSANAYAKA💫
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
+
 // download audio
 
 let down = await fg.yta(url)
 let downloadUrl = down.dl_url
 
-//send message
- await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio?mpeg"},{quoted:mek})
+//send audio message
+await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
 
 
     
