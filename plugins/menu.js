@@ -60,4 +60,7 @@ await conn.sendMessage(from,{image:{url: "https://github.com/prabathrushbot19/RU
   
 }catch(e){
 console.log(e)
-reply(`${e}`)
+reply(`${e}`);
+    }
+  }
+);
