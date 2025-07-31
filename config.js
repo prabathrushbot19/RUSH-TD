@@ -25,6 +25,7 @@ module.exports = {
 🚀 Powered By *RAMESH*
 *DISSANAYAKA* 🔥
 `,  
+AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 
     
 };
