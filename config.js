@@ -26,6 +26,7 @@ module.exports = {
 *DISSANAYAKA* 🔥
 `,  
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
+MODE: process.env.MODE || "public",// public,private,groups,inbox
 
     
 };
