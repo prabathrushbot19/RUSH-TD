@@ -70,21 +70,18 @@ console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
 let up = `
-╔═══◉ *🟢 STATUS: ONLINE* ◉═══╗
-║  𝙷𝚎𝚢 𝙳𝚞𝚍𝚎, 𝙸’𝚖 𝚑𝚎𝚛𝚎 𝚝𝚘 𝚑𝚎𝚕𝚙 𝚢𝚘𝚞.  
-║  𝙰𝚜𝚔 𝚖𝚎 𝚊𝚗𝚢𝚝𝚑𝚒𝚗𝚐! 💬
-╚══════════════════════╝
-
-🧾 *PROFILE INFORMATION*
-┌──────── ⋆⋅☆⋅⋆ ────────┐
-│ 🔐 *Owner:* Ramesh Dissanayaka  
-│ 👤 *Botname:* RUSH-TD  
-│ ⚡ *Bio:* Powerful WhatsApp Bot  
-│ 🧩 *Role:* Wizard Lord 🧙‍♂️  
-└──────── ⋆⋅☆⋅⋆ ────────┘
-
-🚀 Powered By *RAMESH*
-*DISSANAYAKA* 🔥
+╭─────── ⭓ ⭓ ⭓  ─────────╮
+│         🧿 SYSTEM ONLINE 🧿        │
+╰──────────────⟡───────╯
+│ 👋 *Hi* there, I'm Alive Now!
+│ 🍁 *PREFIX:* "."
+│ ⚡ *BOT NAME:* DANUWA-MD
+│ 🧭 *UPTIME:* 00:00:11
+│ 🔋 *PLATFORM:* linux
+│ 🧩 *VERSION:* 1.0.0
+╰───────────────⬣
+*👑 O  W  N  E  R*
+🔥 𝘿𝘼𝙉𝙐𝙆𝘼 𝘿𝙄𝙎𝘼𝙉𝘼𝙔𝘼𝙆𝘼 🔥
        `;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://raw.githubusercontent.com/prabathrushbot19/RUSH-TD/refs/heads/main/images/Rush_Alive.png` }, caption: up })
