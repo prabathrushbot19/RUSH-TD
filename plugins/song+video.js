@@ -27,11 +27,10 @@ let desc = `
 🎼 Let the rhythm guide you... 🎼
 🚀 Pow. By RAMESH DISSANAYAKA 🔥
 ─────────────────────────
-🎬 *Title:* ${data.title}
-⏱️ *Duration:* ${data.timestamp}
-📅 *Uploaded:* ${data.ago}
-👀 *Views:* ${data.views.toLocaleString()}
-🔗 *Watch Here:* ${data.url}
+🎬 *title:* ${data.title}
+⏱️ *description:* ${data.description}
+📅 *time:* ${data.timestamp}
+👀 *Views:* ${data.views}
 ─────────────────────────
 🎼 Made with ❤️ by RAMESH DISSANAYAKA💫
 `
