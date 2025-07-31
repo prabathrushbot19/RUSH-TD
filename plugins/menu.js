@@ -54,7 +54,7 @@ ${menu.search}
 ╰─🔥 *_RAMESH DISSANAYAKA_* 🔥
 `
   
-await conn.sendMessage(from,{text:madeMenu},{quoted:mek})
+await conn.sendMessage(from,{image:{url: "https://github.com/prabathrushbot19/RUSH-TD/blob/main/images/main-menu.png?raw=true"},caption:madeMenu},{quoted:mek})
 
   
   
