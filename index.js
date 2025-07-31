@@ -69,9 +69,25 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `RUSH-TD connected successful ✅\n\nPREFIX: ${prefix}`;
+let up = `
+╔═══◉ *🟢 STATUS: ONLINE* ◉═══╗
+║  𝙷𝚎𝚢 𝙳𝚞𝚍𝚎, 𝙸’𝚖 𝚑𝚎𝚛𝚎 𝚝𝚘 𝚑𝚎𝚕𝚙 𝚢𝚘𝚞.  
+║  𝙰𝚜𝚔 𝚖𝚎 𝚊𝚗𝚢𝚝𝚑𝚒𝚗𝚐! 💬
+╚══════════════════════╝
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/prabathrushbot19/RUSH-TD/blob/main/images/RUSH-TD.png?raw=true` }, caption: up })
+🧾 *PROFILE INFORMATION*
+┌──────── ⋆⋅☆⋅⋆ ────────┐
+│ 🔐 *Owner:* Ramesh Dissanayaka  
+│ 👤 *Botname:* RUSH-TD  
+│ ⚡ *Bio:* Powerful WhatsApp Bot  
+│ 🧩 *Role:* Wizard Lord 🧙‍♂️  
+└──────── ⋆⋅☆⋅⋆ ────────┘
+
+🚀 Powered By *RAMESH*
+*DISSANAYAKA* 🔥
+       `;
+
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://raw.githubusercontent.com/prabathrushbot19/RUSH-TD/refs/heads/main/images/Rush_Alive.png` }, caption: up })
 
 }
 })
